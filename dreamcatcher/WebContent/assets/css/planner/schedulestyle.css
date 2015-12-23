@@ -1,0 +1,111 @@
+/* 레이아웃 */
+#scheduleForm {
+	border:1px solid rgb(244, 244, 244);
+	border-radius: 20px;
+	background-color: #FCFCFC;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 20px 35px 20px 35px;	
+}
+#replyBG {
+	border:1px solid rgb(244, 244, 244);
+	border-radius: 20px;
+	background-color: #FAFAFA;
+/* 	margin-top: 30px;*/
+	margin-bottom: 30px;
+}
+.fatherBorder {
+	border: 1px rgb(242, 242, 242) solid;
+	border-radius: 15px;
+	background-color: white;
+	padding: 12px;
+}
+.leftCol {
+	padding:10px;
+}
+.rightCol {
+	padding:10px;
+}
+
+/* 바닥 공백 */
+#bottom {
+	margin-bottom:15px;
+	margin-top:35px;
+}
+
+
+
+
+/* 테이블 */
+#scheduleTable { background-color: white; margin-top:2%;}
+
+td { vertical-align: middle!important;}
+
+input[type=text] { background-color: white;}
+
+.tableTitle { background-color: #EFDEE7!important;}
+
+#tableContainer {
+	overflow-y:auto;
+}
+
+
+/* 달력 */
+
+#calendar { padding: 2.5%; margin-left:1%;}
+
+.fc-time { display : none; }
+
+.fc-title { font-size: 1.2em;}
+
+.qtip:not(.ie9haxors) div.qtip-content, .qtip:not(.ie9haxors) div.qtip-titlebar {
+	background-color: #9d426b;
+	color: white;
+}
+
+/* 경로로 추가한 장소리스트 */
+#routeList { margin-top: 25px;}
+ol {
+	padding: 3% 0% 0% 0%;
+	min-height: 240px;
+	max-height: 280px;
+	overflow-y: auto;
+}
+
+
+
+/* 좋아요 */
+#like {	margin-top: 10%; }
+
+#btnLike, #btnDislike {
+	width: 100px;
+	border: 2px solid #9d426b;
+}
+#likecnt {
+	font-size: 2.3em;
+	font-family: fantasy;
+	color: #9d426b;
+}
+#likecnt img {
+	width: 52px;
+	margin-right:4px;
+}
+
+/* 지도 */
+
+.map_container {
+	position:relative;
+	width:100%;
+	padding-bottom:40%;
+	margin-bottom:2%;
+}
+#map_canvas {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	border-radius:15px;
+}

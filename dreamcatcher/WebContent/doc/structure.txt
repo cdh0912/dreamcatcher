@@ -1,0 +1,188 @@
+MemberACtionFactory 추가
+
+
+boardmvc
+	- src
+		- com.dreamcatcher.action
+			Action.java (Interface)
+		
+===================== Admin (관리자) ===========================	
+		
+		- com.dreamcatcher.admin.controller
+			AdminController.java (Servlet : admin)
+			
+		- com.dreamcatcher.admin.action
+			AdminSiteConfirmAction.java
+			AdminMemberJoinConfirmAction.java
+			AdminSendPasswordAction.java
+			
+		- com.dreamcatcher.admin.model
+			
+		- com.dreamcatcher.admin.model.service
+			AdminService.java (Interface)
+			AdminServiceImple.java
+			
+		- com.dreamcatcher.admin.model.dao
+			AdminDao.java (Interface)
+			AdminDaoImpl.java
+			
+===================== Member (회원) ===========================				
+			
+		- com.dreamcatcher.member.controller
+			MemberController(Servlet : member)
+	
+		- com.dreamcatcher.member.action
+			MemberJoinAction.java
+			MemberViewAction.java
+			MemberModifyAction.java
+			MemberLoginAction.java
+			MemberLogoutAction.java
+			MemberIdCheckAction.java
+			MemberResetPasswordAction.jav
+
+						
+		- com.dreamcatcher.member.model
+			MemberDto.java
+			
+		- com.dreamcatcher.member.model.service
+			MemberService.java (Interface)
+			MemberServiceImpl.java
+
+		
+		- com.dreamcatcher.member.model.dao
+			MemberDao.java (Interface)
+			MemberDaoImpl.java
+
+===================== Plan (일정) ===========================	
+			
+		- com.dreamcatcher.plan.controller
+			PlanController(Servlet : plan)
+	
+		- com.dreamcatcher.plan.action
+			PlanMakeAction.java		: 여행일정 등록
+			PlanViewAction.java		: 여행일정 보기
+			PlanModifyAction.java	: 여행일정 수정
+			PlanDeleteAction.java	: 계획 삭제
+			
+						
+		- com.dreamcatcher.plan.model
+			PlanDto.java
+			
+		- com.dreamcatcher.plan.model.service
+			PlanService.java (Interface)
+			PlanServiceImpl.java
+
+		
+		- com.dreamcatcher.plan.model.dao
+			PlanDao.java (Interface)
+			PlanDaoImpl.java			
+			
+===================== Site (여행지) ===========================			
+			
+		- com.dreamcatcher.site.controller
+			SiteController(Servlet : site)
+	
+		- com.dreamcatcher.site.action
+			SiteMakeAction.java			: 여행지 추가
+			SiteMapViewAction.java		: 여행지 보기
+			SiteDeleteAction.java		: 여행지 삭제
+			SiteDetailMakeAction.java	: 여행지 정보 등록
+			SiteDetailViewAction.java	: 여행지 상세정보 보기
+			SiteDetailModifyAction.java	: 여행지 상세정보 수정
+			SiteListAction.java			: 여행지 리스트
+			SiteSearchAction.java		: 여행지 검색
+			SiteReplyMakeAction.java	: 경로 답변 등록
+			SiteReplyModifyAction.java	: 경로 답변 수정
+			SiteReplyDeleteAction.java	: 경로 답변 삭제
+						
+		- com.dreamcatcher.site.model
+			SiteDto.java
+			SiteDetailDto.java
+			SiteReplyDto.java
+			SiteImageDto.java
+			LocationDto.java
+			NationDto.java
+			
+		- com.dreamcatcher.site.model.service
+			SiteService.java (Interface)
+			SiteServiceImpl.java
+		
+		- com.dreamcatcher.site.model.dao
+			SiteDao.java (Interface)
+			SiteDaoImpl.java
+			
+===================== Route (경로) ===========================			
+			
+		- com.dreamcatcher.route.controller
+			RouteController(Servlet : route)
+	
+		- com.dreamcatcher.route.action
+			RouteMakeAction.java		: 경로 추가
+			RouteMapViewAction.java		: 경로 보기
+			RouteModifyAction.java		: 경로 수정
+			RouteDeleteAction.java		: 경로 삭제
+			RouteListAction.java		: 경로 리스트
+			RouteReplyMakeAction.java	: 경로 답변 등록
+			RouteReplyModifyAction.java	: 경로 답변 수정
+			RouteReplyDeleteAction.java	: 경로 답변 삭제
+						
+		- com.dreamcatcher.route.model
+			RouteDto.java
+			RouteDetailDto.java
+			RouteReplyDto.java
+			
+		- com.dreamcatcher.route.model.service
+			RouteService.java (Interface)
+			RouteServiceImpl.java
+
+		
+		- com.dreamcatcher.route.model.dao
+			RouteDao.java (Interface)
+			RouteDaoImpl.java							
+			
+===================== Common (공용) ===========================	
+
+		- com.dreamcatcher.common.model.service
+			CommonService.java (Interface)
+			CommonServiceImple.java
+		- com.dreamcatcher.common.model.dao
+			CommonDao.java (Interface)
+			CommonDaoImple.java
+		
+			
+		- com.dreamcatcher.factory
+			MemberActionFactory.java
+			AdminActionFactory.java
+			PlanActionFactory.java
+			RouteActionFactory.java
+			SiteActionFactory.java
+			
+		- com.dreamcatcher.util
+			Encoder.java
+			UrlEncoder.java
+			StringCheck.java
+			NumberCheck.java
+			BoardSizeConstant.java
+			CharacterConstant.java
+			PageNavigaitor.java
+			PageMove.java
+				
+		- com.dreamcatcher.util.db
+			DBConnection.java
+			DBClose.java
+						
+	- webContent
+		- img, css, js, doc
+		- common
+			common.jsp : 프로젝트 전체 공용
+			board.jsp : 게시판 공용
+		- admin
+			boardlist.jsp
+			admin.jsp
+			mscategory.jsp
+			mkboard.jsp
+		- board
+		- reboard
+		- album
+		- bbs
+		index.jsp

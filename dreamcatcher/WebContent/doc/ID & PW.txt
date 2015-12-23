@@ -1,0 +1,9 @@
+<관리자 계정>
+
+ID : dreamcatchul@gmail.com
+PW : 12345
+
+<일반 이용자 계졍>
+
+ID : cdh0912@gmail.com
+PW : 12345

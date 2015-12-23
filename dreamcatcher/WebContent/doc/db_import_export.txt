@@ -1,0 +1,5 @@
+
+
+exp kitri/kitri direct=y file=c:\kitri.dmp log=c:\kitri.log
+
+imp kitri/kitri full=y file=c:\kitri.dmp

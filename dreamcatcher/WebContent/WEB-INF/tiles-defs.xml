@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<!-- 공통 레이아웃 -->
+	<definition name="main" template="/common/layout.jsp">
+		<put-attribute name="title" value="Dream Catcher" />
+		<put-attribute name="header" value="/common/header.jsp" />
+		<put-attribute name="content" value="/common/content.jsp" />
+		<put-attribute name="footer" value="/common/footer.jsp" />
+	</definition>
+
+	<!-- route 레이아웃 : main 레이아웃을 상속-->
+	<definition name="route/*" extends="main">
+		<put-attribute name="content" value="/route/{1}.jsp" />
+	</definition>
+
+	<!-- site 레이아웃 : main 레이아웃을 상속-->	
+	<definition name="site/*" extends="main">
+		<put-attribute name="content" value="/site/{1}.jsp" />
+	</definition>
+
+	<!-- plan 레이아웃 : main 레이아웃을 상속-->	
+	<definition name="plan/*" extends="main">
+		<put-attribute name="content" value="/plan/{1}.jsp" />
+	</definition>
+
+	<!-- etc 레이아웃 : main 레이아웃을 상속-->	
+	<definition name="etc/*" extends="main">
+		<put-attribute name="content" value="/etc/{1}.jsp" />
+	</definition>
+	
+	<definition name="myInfo" extends="main">
+		<put-attribute name="content" value="/member/myInfo.jsp" />
+	</definition>
+	
+	<!-- admin 레이아웃 : main 레이아웃을 상속-->	
+	<definition name="admin/*" extends="main">
+		<put-attribute name="content" value="/admin/{1}.jsp" />
+	</definition>	
+	
+	<!-- error 레이아웃 : main 레이아웃을 상속-->	
+	<definition name="error/*" extends="main">
+		<put-attribute name="content" value="/error/{1}.jsp" />
+	</definition>	
+	
+	
+</tiles-definitions>
